@@ -32,3 +32,9 @@
 *.swp
 
 build/*
+bin/
+
+# Visual studio
+.vs/
+out/
+/CMakeSettings.json
