@@ -20,7 +20,7 @@ endforeach()
 #
 # Create the library
 #
-add_library(psim STATIC ${PSIM_SRC} ${PSIM_VIS_SRC})
+add_library(psim STATIC ${PSIM_SRC} ${PSIM_VIS_SRC} "vis/fluid/FluidHook.h" "vis/fluid/FluidHook.cpp" "vis/fluid/FluidVisualizer.h" "vis/fluid/FluidVisualizer.cpp")
 target_link_libraries(psim PRIVATE imgui glad glfw)
 target_include_directories(psim PRIVATE "${PROJECT_SOURCE_DIR}/libigl/external/eigen"
                                        "${PROJECT_SOURCE_DIR}/libigl/include")

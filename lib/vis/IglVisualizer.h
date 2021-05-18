@@ -52,7 +52,8 @@ public:
     virtual void setupViewer()
     {
         viewer_.core().orthographic = true;
-        viewer_.core().camera_zoom = 4.0;
+        viewer_.core().camera_zoom = 1.0;
+        //viewer_.core().camera_translation = Eigen::Vector3f(0.0, 0.0, 0.0);
         viewer_.data().show_lines = false;
         viewer_.data().set_face_based(false);
         viewer_.core().is_animating = true;
